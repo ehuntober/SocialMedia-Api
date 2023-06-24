@@ -17,8 +17,37 @@ const userSchema = new mongoose.Schema({
     },
     profilePicture:{
         type: String,
-        required: true,
-        min: 6
+        default: ""
     },
+    coverPicture:{
+        type: String,
+        default: ""
+    },
+    followers: {
+        type: Array,
+        default : []
+    },
+    followings: {
+        type: Array,
+        default: []
+    },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
+    desc:{
+        type: String,
+        max: 100
+    },
+    city: {
+        type: String,
+        max: 50
+
+    },
+    from: {
+        
+    }
+
+
 
 })
