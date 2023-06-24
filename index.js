@@ -3,12 +3,17 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv');
 
+const authRoute = require('./routes/auth')
+
 
 const app = express();
 dotenv.config()
 
 app.use(cors());
 app.use(express.json())
+
+//All API Routes
+app.use("/api/auth", authRoute)
 
 // Connect with MongoDB Database
 
