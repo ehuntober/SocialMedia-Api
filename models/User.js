@@ -19,6 +19,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
+    password:{
+        type: String,
+        default: ""
+    },
     coverPicture:{
         type: String,
         default: ""
