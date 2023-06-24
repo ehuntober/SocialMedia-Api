@@ -45,9 +45,20 @@ const userSchema = new mongoose.Schema({
 
     },
     from: {
-        
-    }
+        type: String,
+        max: 50
+    },
+    relationships: {
+        type: Number,
+        enum: [1,2,3],
+    },
 
 
 
-})
+},
+
+
+        {timestamps: true},
+)
+
+module.exports = mongoose.model('User', userSchema)
