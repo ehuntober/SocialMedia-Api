@@ -1,0 +1,21 @@
+
+
+User Authentication API (Login, Register)
+
+POST API:
+   Create New Post 
+   Update New Post
+   Delete New Post 
+   Like & Dislike a Post 
+   Get All Post 
+   Get timeline Post 
+   Get Auth User posts
+
+
+
+User API:
+  Update Profile 
+  Delete Profile 
+  Get a User 
+  Ger User Friend 
+  Follow & Unfollow a user 
